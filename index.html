@@ -5,7 +5,7 @@
         <meta name="description" content="DHL">
         <meta name="keywords" content="post, deliver, dhl, logistics">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=">
+        <meta name="viewport" content="width=device-width">
         
         <meta property="og:title" content="DHL">
         <meta property="og:type" content="DHL">
@@ -21,96 +21,75 @@
     </head>
 
     <body>
-        <header>
-            <div class="menu_top__background">
-                <div class="container">
-                    <div class="menu_top">
-                        <div class="menu_top__select">
-                            <select name="language" class="menu_top__language">
-                                <option value="english">English</option>
-                                <option value="german">German</option>
-                                <option value="russian">Russian</option>
-                            </select>
-                        </div>
-                        <div class="menu_top__address">
-                            <a href="#" class="menu__contact">Contact Center</a>
-                        </div>
-                        <div class="menu_top__select">
-                            <select name="country" class="menu_top__country">
-                                <option value="england">Country Profile</option>
-                                <option value="germany">England</option>
-                                <option value="russian">Russia</option>
-                            </select>
-                        </div>
+        <header class="header">
+            <div class="top-header">
+                <div class="container top-header__container">
+                    <div class="select top-header__select top-header_select_language">
+                        <select name="language">
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                        </select>
+                    </div>
+                    <div class="contacts top-header__contacts">
+                        <a href="#">Contact Center</a>
+                    </div>
+                    <div class="select top-header__select top-header_select_country">
+                        <select name="language">
+                            <option>Country Profile</option>
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div class="menu_main_background">
-                <div class="container">
-                    <div class="menu_main">
-                        <a href="#"><img src="./images/main_logo.png" alt="logo" class="menu_main__logo"></a> 
-                        <nav class="menu_main__items">
-                            <ul>
-                                <li class="menu_main__link"><a href="#">express</a></li>
-                                <li class="menu_main__link"><a href="#">parcel & ecommerce</a></li>
-                                <li class="menu_main__link"><a href="#">logistics</a></li>
-                                <li class="menu_main__link"><a href="#">mail</a></li>
-                                <li class="menu_main__link"><a href="#">press</a></li>
-                                <li class="menu_main__link"><a href="#">about</a></li>
-                            </ul>
-                            <form action="#" class="menu_main__form">
-                                <div>
-                                    <input type="search" name="serveces" placeholder="">
-                                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </div>
-                            </form>
-                        </nav>
+            <div class="main-header">
+                <div class="container main-header__container">
+                    <div class="logo main-header__logo">
+                        <a href="#"><img src="../project DHL/images/main_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="menu main-header__menu">
+                       <div><a href="#">express</a></div>
+                       <div><a href="#">farcel & ecommerce</a></div>
+                       <div><a href="#">logistics</a></div>
+                       <div><a href="#">mail</a></div>
+                       <div><a href="#">press</a></div>
+                       <div><a href="#">about</a></div>
+                    </div>
+                    <div class="search main-header__search">
+                        <form action="#">
+                            <div>
+                                <input type="search" name="search-services" placeholder="">
+                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="main_page">
-                <div class="container">
-                    <div class="main_page__title">
-                        <span>We Deliver</span>  
+            <section class="main-page">
+                <div class="container main-page__container">
+                    <div class="title main-page__title">
+                        <span>We Deliver</span> 
                         <span>With Speed</span> 
                     </div>
-                    <div class="main_page__line">
-                        <img src="./images/line.png" alt="">
+                    <div class="line main-page__line">
+                        <img src="./images/line.png" alt="line">
                     </div>
-                    <div class="main_page__subtitle">
+                    <div class="subtitle main-page__subtitle">
                         <span>When an unknown printer took a galley of type and scrambled</span> 
-                        <span>it to make a type specimen book. It has survved not only five centuries </span>  
+                        <span>it to make a type specimen book. It has survved not only five centuries</span> 
                     </div>
-                    <div class="main_page__description">
-                        <div class="main_page__item">
-                            amazing
-                        </div>
-                        <div class="main_page__item">
-                            quick
-                        </div>
-                        <div class="main_page__item">
-                            24/7  supports
-                        </div>
+                    <div class="services main-page__services">
+                        <div>amazing</div>
+                        <div>quick</div>
+                        <div>24/7 supports</div>
                     </div>
-                    <div class="main_page__buttons">
-                        <div class="main_page__button">
-                            <button>learn more</button>
-                        </div>
-                        <div class="main_page__button">
-                            <button>dhl worldwide</button>
-                        </div>
+                    <div class="button main-page__button">
+                        <button>learn more</button>
+                        <button>dhl worldwide</button>
                     </div>
-                    
-                    
-                    
-
                 </div>
-
-
-
-
 
 
 
@@ -122,51 +101,7 @@
 
 
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         
     </body>
 </html>
