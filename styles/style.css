@@ -313,3 +313,116 @@ body {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+
+.services .title {
+  font-size: 50px;
+  font-weight: 900;
+  color: #ba0000;
+}
+
+.services .services__title {
+  padding-top: 145px;
+  padding-bottom: 110px;
+}
+
+.services .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services .services__box {
+  margin-bottom: 100px;
+}
+
+.services .services__box div {
+  max-width: 270px;
+}
+
+.services .services__box div h3 {
+  color: #ba0000;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.services .services__box div p {
+  color: #777777;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.services .services__box div button {
+  margin-top: 20px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.services .services__box div button:after {
+  content: "\f0da";
+  font-family: FontAwesome;
+  color: #ba0000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.services .services__box div:nth-child(4) {
+  background: #ba0000;
+}
+
+.services .services__box div:nth-child(4) h3 {
+  margin-left: 30px;
+  color: #fff;
+}
+
+.services .services__box div:nth-child(4) img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.services .services__box div:nth-child(4) p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.services .services__box div:nth-child(4) select {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  background: #9d0000;
+}
+
+.services .services__box div:nth-child(4) button {
+  margin-left: 30px;
+  display: block;
+  background: #ffcc00;
+  color: #ba0000;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  border-radius: 35px;
+}
+
+.services .services__box div:nth-child(4) button:hover {
+  -webkit-box-shadow: 0px 3px 10px #ffcc00;
+          box-shadow: 0px 3px 10px #ffcc00;
+}
+
+.services .services__box div:nth-child(4) button:after {
+  content: "";
+}
