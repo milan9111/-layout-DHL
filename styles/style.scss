@@ -312,7 +312,13 @@ body {
                 font-size: 16px;
                 color: #fff;
                 font-weight: 400;
-                background: #9d0000 ;
+                background: #9d0000;
+                appearance: none;
+                overflow: hidden;
+                background: url('../images/arrow_select.png') no-repeat right;
+            option {
+                background: #9d0000;
+            }
             }
             
             button {
@@ -334,4 +340,81 @@ body {
     }
 }
 
+.transportation{
+    position: relative;
+    min-height: 100vh;
+    
+    .transportation__container{
+        position: relative;
+        z-index: 2;
+        flex: 1 1 auto;
+        .title{
+            font-size: 50px;
+            font-weight: 800;
+            color: #fff;
+        }
+        .transportation__title{
+            padding-top: 150px;
+            margin-bottom: 300px;
+        }
+
+        .transportatin__box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            padding-bottom: 100px;
+            div {
+                box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.219);
+            }
+            h3 {
+                padding-left: 15px;
+                padding-top: 30px;
+                padding-bottom: 35px;
+                font-size: 20px;
+                font-weight: 900;
+                color: #ba0000;
+            }
+            ul  {
+                padding-left: 15px;
+                padding-bottom: 30px;
+                color: #777777;
+                line-height: 175%;
+            }
+
+            li:before {
+                padding-left: 15px;
+                content: "\f0da";
+                font-family: FontAwesome;
+                color: #ffcc00;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+    }
+    .video {
+        .transportation__video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        }
+        .transportation_video_blackout {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+    
+    
+     
+}
 
