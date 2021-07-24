@@ -369,7 +369,7 @@ body {
                 box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.219);
             }
             h3 {
-                padding-left: 15px;
+                padding-left: 30px;
                 padding-top: 30px;
                 padding-bottom: 35px;
                 font-size: 20px;
@@ -413,8 +413,123 @@ body {
             background: rgba(0, 0, 0, 0.5);
         }
     }
-    
-    
-     
 }
+
+.orders__form {
+    max-width: 520px;
+    background: #ba0000;
+    margin-bottom: 200px;
+    .orders__button{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    button {
+        font-size: 14px;
+        background: #ba0000;
+        color: #fff;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 18px 76px;
+        transition: background 0.2s ease-out;
+    }
+    button:nth-child(1) {
+        padding-right: 96px;
+    }
+    button:hover {
+        background: #ffcc00;
+        color: #ba0000;
+    }
+
+    .order_form_item {
+        padding-bottom: 40px;
+        p {
+            font-size: 16px;
+            font-weight: 800;
+            color: #fff;
+            padding: 10px 15px;
+        }
+        ul {
+            font-size: 14px;
+            color: #fff;
+            padding: 10px 15px;
+            line-height: 1.5;
+        }
+    }
+    .order_text {
+        display: none;
+        padding-top: 20px;
+        padding-left: 25px;
+        li:before {
+            padding-left: 10px;
+            content: "\f0da";
+            font-family: FontAwesome;
+            color: #ffcc00;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+    }
+    .form_item_title {
+        font-size: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        display: block;
+        cursor: pointer;
+        padding: 15px 15px;
+        margin: 0px 40px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        border: 3px solid #fff; 
+    }
+
+    .form_item_title:after {
+        position: absolute;
+        top: 15px;
+        right: 25px;    
+        content: "\f107";
+        font-family: FontAwesome;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .form_item_title:hover {
+        color:#ba0000;
+        font-weight: 900;
+        background: #ffcc00;
+        border: 3px solid #ffcc00;
+    }   
+
+    .form_item_title:hover:after{
+        color:#ba0000;
+        font-weight: 900;
+    } 
+
+    .form_item_input {
+        -webkit-appearance: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+    .form_item_input:checked ~ .form_item_title {
+        color:#ba0000;
+        font-weight: 900;
+        background: #ffcc00;
+        border: 3px solid #ffcc00;
+    }
+
+    .form_item_input:checked ~ .form_item_title:after {
+        content: "\f106";
+        color:#ba0000;
+        font-weight: 900;
+    }
+
+    .form_item_input:checked ~ .order_text {
+        display: block;
+    }
+}
+
+
 
