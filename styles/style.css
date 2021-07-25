@@ -525,13 +525,18 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.orders__form {
+.orders__container {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.orders__container .orders__form {
   max-width: 520px;
   background: #ba0000;
   margin-bottom: 200px;
 }
 
-.orders__form .orders__button {
+.orders__container .orders__form .orders__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,7 +546,7 @@ body {
   margin-bottom: 35px;
 }
 
-.orders__form button {
+.orders__container .orders__form button {
   font-size: 14px;
   background: #ba0000;
   color: #fff;
@@ -553,40 +558,40 @@ body {
   transition: background 0.2s ease-out;
 }
 
-.orders__form button:nth-child(1) {
+.orders__container .orders__form button:nth-child(1) {
   padding-right: 96px;
 }
 
-.orders__form button:hover {
+.orders__container .orders__form button:hover {
   background: #ffcc00;
   color: #ba0000;
 }
 
-.orders__form .order_form_item {
+.orders__container .orders__form .order_form_item {
   padding-bottom: 40px;
 }
 
-.orders__form .order_form_item p {
+.orders__container .orders__form .order_form_item p {
   font-size: 16px;
   font-weight: 800;
   color: #fff;
   padding: 10px 15px;
 }
 
-.orders__form .order_form_item ul {
+.orders__container .orders__form .order_form_item ul {
   font-size: 14px;
   color: #fff;
   padding: 10px 15px;
   line-height: 1.5;
 }
 
-.orders__form .order_text {
+.orders__container .orders__form .order_text {
   display: none;
   padding-top: 20px;
   padding-left: 25px;
 }
 
-.orders__form .order_text li:before {
+.orders__container .orders__form .order_text li:before {
   padding-left: 10px;
   content: "\f0da";
   font-family: FontAwesome;
@@ -596,7 +601,7 @@ body {
   margin-right: 15px;
 }
 
-.orders__form .form_item_title {
+.orders__container .orders__form .form_item_title {
   font-size: 14px;
   color: #fff;
   text-transform: uppercase;
@@ -610,7 +615,7 @@ body {
   border: 3px solid #fff;
 }
 
-.orders__form .form_item_title:after {
+.orders__container .orders__form .form_item_title:after {
   position: absolute;
   top: 15px;
   right: 25px;
@@ -621,38 +626,181 @@ body {
   vertical-align: middle;
 }
 
-.orders__form .form_item_title:hover {
+.orders__container .orders__form .form_item_title:hover {
   color: #ba0000;
   font-weight: 900;
   background: #ffcc00;
   border: 3px solid #ffcc00;
 }
 
-.orders__form .form_item_title:hover:after {
+.orders__container .orders__form .form_item_title:hover:after {
   color: #ba0000;
   font-weight: 900;
 }
 
-.orders__form .form_item_input {
+.orders__container .orders__form .form_item_input {
   -webkit-appearance: none;
   position: absolute;
   width: 0;
   height: 0;
 }
 
-.orders__form .form_item_input:checked ~ .form_item_title {
+.orders__container .orders__form .form_item_input:checked ~ .form_item_title {
   color: #ba0000;
   font-weight: 900;
   background: #ffcc00;
   border: 3px solid #ffcc00;
 }
 
-.orders__form .form_item_input:checked ~ .form_item_title:after {
+.orders__container .orders__form .form_item_input:checked ~ .form_item_title:after {
   content: "\f106";
   color: #ba0000;
   font-weight: 900;
 }
 
-.orders__form .form_item_input:checked ~ .order_text {
+.orders__container .orders__form .form_item_input:checked ~ .order_text {
   display: block;
+}
+
+.orders__container .order__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.orders__container .order__image img {
+  max-width: 100%;
+}
+
+.description {
+  background: #ba0000;
+}
+
+.description .description__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description .description__container h2 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 95px;
+  margin-bottom: 40px;
+}
+
+.description .description__container p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 100px;
+}
+
+.description .description__container p span {
+  display: block;
+}
+
+.description button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  background: #9d0000;
+  padding: 15px 30px;
+  border-radius: 35px;
+}
+
+.description button:hover {
+  background: #ffcc00;
+  color: #9d0000;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+footer .footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+footer .footer__box a {
+  border: 2px solid #eedbdb;
+  padding: 45px 15px;
+  background-color: #f9f9f9;
+}
+
+footer .footer__box a:hover {
+  border: 2px solid #ba0000;
+}
+
+footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__social img {
+  margin-top: 75px;
+}
+
+footer .footer__social .footer_social_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer__social .footer_social_box div {
+  width: 240px;
+}
+
+footer .footer__social .footer_social_box h3 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #ba0000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 125px;
+  padding-bottom: 35px;
+}
+
+footer .footer__social .footer_social_box li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+footer .footer__social .footer_social_box li a {
+  font-size: 14px;
+  font-weight: 900;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+footer .footer__social .footer_social_box li a:hover {
+  color: #ffcc00;
+}
+
+footer .footer__social .footer_social_box li:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  color: #ba0000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+footer .footer__social .footer_social_box .footer_social_box_media a:hover {
+  color: #017edf;
 }
